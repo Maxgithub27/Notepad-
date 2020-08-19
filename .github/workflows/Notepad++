@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    - name: Run a one-line script
+      run: echo Hello, world!
+
+    # Runs a set of commands using the runners shell
+    - name: Run a multi-line script
+      run: |
+        echo Add other actions to build,
+        echo test, and deploy your project.
+3eb9b47af471c0250010e4bc5d47d71161f7116310f072472f71ca97476744c8  npp.7.8.9.bin.7z
+2205134cf960cf2ccabb9197ade20a7422be734dcdf7d97868eed2ffb545f7dc  npp.7.8.9.bin.minimalist.7z
+ace9254823c29dfaa2955fe9ac5a508808c5168d0c510023d05e487d605a6421  npp.7.8.9.bin.minimalist.x64.7z
+c6b437980ce8424fe61fe991d473fa16c354208addc3188b28917a02243bb56d  npp.7.8.9.bin.x64.7z
+202780513e4208ca79f7d076742939b4a88677874230348427d71969af157805  npp.7.8.9.bin.x64.zip
+5f455e1539ac5652e773addadc9ec7d39cc0a4c354963f6e6e9f93479f8d52d4  npp.7.8.9.bin.zip
+e7585df965054954d8d786f62f316c06739a44e7dd6bfe0eff79596e3979a790  npp.7.8.9.Installer.exe
+e8e866aca5672e91446ce9d965250317e95d2a3d238ea32fa2c378cd315cb85f  npp.7.8.9.Installer.x64.exe
